@@ -80,7 +80,7 @@
 				C3C6CB072977B9E9000D0410 /* ArticleListViewController.swift */,
 				C3C6CB052977B9AD000D0410 /* ArticleDetail.storyboard */,
 				C3C6CB092977B9FB000D0410 /* ArticleDetailViewController.swift */,
-				C3C6CB0B2977BCFF000D0410 /* ArticleEntity.swift */,
+				C3C6CB15297FD00C000D0410 /* Entity */,
 				C3C6CB0E297FCDA1000D0410 /* UseCase */,
 				C3C6CAF82977B96E000D0410 /* Assets.xcassets */,
 				C3C6CAFA2977B96E000D0410 /* LaunchScreen.storyboard */,
@@ -97,6 +97,14 @@
 				C3C6CB13297FCFD5000D0410 /* GetArticleByIdUseCase.swift */,
 			);
 			path = UseCase;
+			sourceTree = "<group>";
+		};
+		C3C6CB15297FD00C000D0410 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C3C6CB0B2977BCFF000D0410 /* ArticleEntity.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
