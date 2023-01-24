@@ -25,7 +25,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let articleListViewController = UIStoryboard(name: "ArticleList", bundle: nil).instantiateInitialViewController() as? ArticleListViewController else {
             fatalError()
         }
-        
+        // presenterを外から入れてあげる
+        // View自体の参照を渡し
+        articleListViewController.presenter = ArticleListPresenter(view: articleListViewController)
         let navigation = UINavigationController(rootViewController: articleListViewController)
         window?.rootViewController = navigation
     }
