@@ -8,41 +8,34 @@
 import UIKit
 
 class ArticleDetailViewController: UIViewController {
-  enum Row: String {
-    case title
-    case body
     
-    static var rows: [Row] {
-      return [.title, .body]
+    static func instantiate() -> ArticleDetailViewController {
+        guard let articleDetailViewController = UIStoryboard(name: "ArticleDetail", bundle: nil).instantiateInitialViewController() as? ArticleDetailViewController else {
+            fatalError()
+        }
+        return articleDetailViewController
     }
-  }
-  
-  @IBOutlet weak var titleLabel: UILabel!
-  @IBOutlet weak var detailTextView: UITextView!
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-  }
+    
+    var articleEntity: ArticleEntity!
+    var presenter: ArticleDetailPresenterProtocol!
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var detailTextView: UITextView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
 
-extension ArticleDetailViewController: UITableViewDelegate, UITableViewDataSource {
+extension ArticleDetailViewController: ArticleDetailViewProtocol {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Row.rows.count
+    func showArticle(_ articleEntity: ArticleEntity) {
+        self.articleEntity = articleEntity
+        self.titleLabel.text = articleEntity.title
+        self.detailTextView.text = articleEntity.body
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let row = Row.rows[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: row.rawValue, for: indexPath)
-        
-        if row == .title {
-            cell.textLabel?.text = "タイトル"
-            cell.detailTextLabel?.text = "記事のタイトル"
-        }
-        if row == .body {
-            cell.textLabel?.text = "記事の本文"
-            cell.detailTextLabel?.text = nil
-        }
-        return cell
+    func showError(_ error: Error) {
+        // 今回はスキップ
     }
 }

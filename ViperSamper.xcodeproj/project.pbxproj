@@ -23,6 +23,7 @@
 		C3C6CB1C297FD0A1000D0410 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C6CB1A297FD0A1000D0410 /* Main.storyboard */; };
 		C3C6CB1D297FD0A1000D0410 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CB1B297FD0A1000D0410 /* ViewController.swift */; };
 		C3C6CB20297FD0F4000D0410 /* ArticleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CB1F297FD0F4000D0410 /* ArticleListPresenter.swift */; };
+		C3C6CB22297FD840000D0410 /* ArticleDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CB21297FD840000D0410 /* ArticleDetailPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		C3C6CB1A297FD0A1000D0410 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C3C6CB1B297FD0A1000D0410 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C3C6CB1F297FD0F4000D0410 /* ArticleListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListPresenter.swift; sourceTree = "<group>"; };
+		C3C6CB21297FD840000D0410 /* ArticleDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				C3C6CB1F297FD0F4000D0410 /* ArticleListPresenter.swift */,
+				C3C6CB21297FD840000D0410 /* ArticleDetailPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				C3C6CB1D297FD0A1000D0410 /* ViewController.swift in Sources */,
 				C3C6CB14297FCFD5000D0410 /* GetArticleByIdUseCase.swift in Sources */,
+				C3C6CB22297FD840000D0410 /* ArticleDetailPresenter.swift in Sources */,
 				C3C6CB0C2977BCFF000D0410 /* ArticleEntity.swift in Sources */,
 				C3C6CB10297FCDB9000D0410 /* UseCaseProtocol.swift in Sources */,
 				C3C6CB20297FD0F4000D0410 /* ArticleListPresenter.swift in Sources */,
