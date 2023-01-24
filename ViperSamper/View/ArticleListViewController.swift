@@ -8,6 +8,18 @@
 import UIKit
 
 class ArticleListViewController: UIViewController {
+    
+    static func instantiate() -> ArticleListViewController {
+        
+        guard let articleListViewController = UIStoryboard(name: "ArticleList", bundle: nil).instantiateInitialViewController() as? ArticleListViewController else {
+            fatalError()
+        }
+        // presenterを外から入れてあげる
+        // View自体の参照を渡し
+        articleListViewController.presenter = ArticleListPresenter(view: articleListViewController)
+        return articleListViewController
+    }
+    
     var presenter: ArticleListPresenterProtocol!
     
     @IBOutlet weak var tableView: UITableView!
