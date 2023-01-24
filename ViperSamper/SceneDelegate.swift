@@ -22,6 +22,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         window?.makeKeyAndVisible()
         let articleListViewController = ArticleListViewController.instantiate()
+        // presenterを外から入れてあげる
+        // View自体の参照を渡し
+        articleListViewController.presenter = ArticleListPresenter(
+            view: articleListViewController,
+            inject: ArticleListPresenter.Dependency(
+                router: ArticleListRouter(view: articleListViewController),
+                getArticlesArrayUseCase: UseCase(GetArticlesArrayUseCase())
+            )
+        )
         let navigation = UINavigationController(rootViewController: articleListViewController)
         window?.rootViewController = navigation
     }
