@@ -24,6 +24,7 @@ class ArticleDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.presenter.didLoad(articleEntity: self.articleEntity)
     }
 }
 
