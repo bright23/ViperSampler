@@ -8,7 +8,7 @@
 import Foundation
 
 // https://jsonplaceholder.typicode.com/posts
-struct ArticleEntity {
+struct ArticleEntity: Codable {
     let id: Int
     let userId: Int
     let title: String
