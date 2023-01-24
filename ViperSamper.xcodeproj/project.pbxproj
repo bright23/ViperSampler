@@ -18,6 +18,7 @@
 		C3C6CB082977B9E9000D0410 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CB072977B9E9000D0410 /* ArticleListViewController.swift */; };
 		C3C6CB0A2977B9FB000D0410 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CB092977B9FB000D0410 /* ArticleDetailViewController.swift */; };
 		C3C6CB0C2977BCFF000D0410 /* ArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CB0B2977BCFF000D0410 /* ArticleEntity.swift */; };
+		C3C6CB10297FCDB9000D0410 /* UseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CB0F297FCDB9000D0410 /* UseCaseProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C3C6CB072977B9E9000D0410 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 		C3C6CB092977B9FB000D0410 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		C3C6CB0B2977BCFF000D0410 /* ArticleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleEntity.swift; sourceTree = "<group>"; };
+		C3C6CB0F297FCDB9000D0410 /* UseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +77,20 @@
 				C3C6CB052977B9AD000D0410 /* ArticleDetail.storyboard */,
 				C3C6CB092977B9FB000D0410 /* ArticleDetailViewController.swift */,
 				C3C6CB0B2977BCFF000D0410 /* ArticleEntity.swift */,
+				C3C6CB0E297FCDA1000D0410 /* UseCase */,
 				C3C6CAF82977B96E000D0410 /* Assets.xcassets */,
 				C3C6CAFA2977B96E000D0410 /* LaunchScreen.storyboard */,
 				C3C6CAFD2977B96E000D0410 /* Info.plist */,
 			);
 			path = ViperSamper;
+			sourceTree = "<group>";
+		};
+		C3C6CB0E297FCDA1000D0410 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				C3C6CB0F297FCDB9000D0410 /* UseCaseProtocol.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 			files = (
 				C3C6CAF42977B96C000D0410 /* ViewController.swift in Sources */,
 				C3C6CB0C2977BCFF000D0410 /* ArticleEntity.swift in Sources */,
+				C3C6CB10297FCDB9000D0410 /* UseCaseProtocol.swift in Sources */,
 				C3C6CB082977B9E9000D0410 /* ArticleListViewController.swift in Sources */,
 				C3C6CAF02977B96C000D0410 /* AppDelegate.swift in Sources */,
 				C3C6CAF22977B96C000D0410 /* SceneDelegate.swift in Sources */,
