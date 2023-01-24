@@ -19,6 +19,7 @@
 		C3C6CB0A2977B9FB000D0410 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CB092977B9FB000D0410 /* ArticleDetailViewController.swift */; };
 		C3C6CB0C2977BCFF000D0410 /* ArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CB0B2977BCFF000D0410 /* ArticleEntity.swift */; };
 		C3C6CB10297FCDB9000D0410 /* UseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CB0F297FCDB9000D0410 /* UseCaseProtocol.swift */; };
+		C3C6CB12297FCF7C000D0410 /* GetArticlesArrayUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CB11297FCF7C000D0410 /* GetArticlesArrayUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C3C6CB092977B9FB000D0410 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		C3C6CB0B2977BCFF000D0410 /* ArticleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleEntity.swift; sourceTree = "<group>"; };
 		C3C6CB0F297FCDB9000D0410 /* UseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProtocol.swift; sourceTree = "<group>"; };
+		C3C6CB11297FCF7C000D0410 /* GetArticlesArrayUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticlesArrayUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				C3C6CB0F297FCDB9000D0410 /* UseCaseProtocol.swift */,
+				C3C6CB11297FCF7C000D0410 /* GetArticlesArrayUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				C3C6CAF02977B96C000D0410 /* AppDelegate.swift in Sources */,
 				C3C6CAF22977B96C000D0410 /* SceneDelegate.swift in Sources */,
 				C3C6CB0A2977B9FB000D0410 /* ArticleDetailViewController.swift in Sources */,
+				C3C6CB12297FCF7C000D0410 /* GetArticlesArrayUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
