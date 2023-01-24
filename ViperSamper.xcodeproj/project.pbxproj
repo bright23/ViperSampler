@@ -20,6 +20,7 @@
 		C3C6CB0C2977BCFF000D0410 /* ArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CB0B2977BCFF000D0410 /* ArticleEntity.swift */; };
 		C3C6CB10297FCDB9000D0410 /* UseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CB0F297FCDB9000D0410 /* UseCaseProtocol.swift */; };
 		C3C6CB12297FCF7C000D0410 /* GetArticlesArrayUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CB11297FCF7C000D0410 /* GetArticlesArrayUseCase.swift */; };
+		C3C6CB14297FCFD5000D0410 /* GetArticleByIdUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6CB13297FCFD5000D0410 /* GetArticleByIdUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		C3C6CB0B2977BCFF000D0410 /* ArticleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleEntity.swift; sourceTree = "<group>"; };
 		C3C6CB0F297FCDB9000D0410 /* UseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProtocol.swift; sourceTree = "<group>"; };
 		C3C6CB11297FCF7C000D0410 /* GetArticlesArrayUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticlesArrayUseCase.swift; sourceTree = "<group>"; };
+		C3C6CB13297FCFD5000D0410 /* GetArticleByIdUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticleByIdUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				C3C6CB0F297FCDB9000D0410 /* UseCaseProtocol.swift */,
 				C3C6CB11297FCF7C000D0410 /* GetArticlesArrayUseCase.swift */,
+				C3C6CB13297FCFD5000D0410 /* GetArticleByIdUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3C6CAF42977B96C000D0410 /* ViewController.swift in Sources */,
+				C3C6CB14297FCFD5000D0410 /* GetArticleByIdUseCase.swift in Sources */,
 				C3C6CB0C2977BCFF000D0410 /* ArticleEntity.swift in Sources */,
 				C3C6CB10297FCDB9000D0410 /* UseCaseProtocol.swift in Sources */,
 				C3C6CB082977B9E9000D0410 /* ArticleListViewController.swift in Sources */,
