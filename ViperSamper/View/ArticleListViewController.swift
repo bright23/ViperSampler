@@ -8,13 +8,15 @@
 import UIKit
 
 class ArticleListViewController: UIViewController {
-  
-  @IBOutlet weak var tableView: UITableView!
+    var presenter: ArticleListPresenterProtocol!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    private var articleEntities = [ArticleEntity]()
   
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.presenter.didLoad()
     }
 }
 
