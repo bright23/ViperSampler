@@ -7,6 +7,7 @@
 
 import UIKit
 
+// https://dev.classmethod.jp/articles/developers-io-2020-viper-architecture/
 class ViewController: UIViewController {
 
   override func viewDidLoad() {
